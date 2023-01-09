@@ -8,11 +8,11 @@ public:
                 break;
         }
         if(i<0)reverse(nums.begin(),nums.end());
-        else{for(j=n-1;j>=0;j--){
+       else{ for(j=n-1;j>=0;j--){
             if(nums[j]>nums[i])
                 break;
         }
-        swap(nums[i],nums[j]);
-        reverse(nums.begin()+i+1,nums.end());}
-    }
+    swap(nums[i],nums[j]);
+    reverse(nums.begin()+i+1,nums.end());
+    }}
 };
