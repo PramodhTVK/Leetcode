@@ -8,8 +8,8 @@ public:
         unordered_map<char,int>ans2;
         for(int i=0;i<n;i++){
             if(ans1[s[i]]!=ans2[t[i]])return false;
-            ans1[s[i]]=i+1;
-            ans2[t[i]]=i+1;
+            ans1[s[i]]=i+2;
+            ans2[t[i]]=i+2;
         }
         return true;
     }
